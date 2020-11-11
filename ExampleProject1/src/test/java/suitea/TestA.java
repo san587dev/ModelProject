@@ -8,7 +8,7 @@ import testBase.TestBase;
 
 public class TestA extends TestBase{
 	
-	@Test(dataProviderClass = TestDataProvider.class, dataProvider = "dataSuiteA")
+	@Test(groups = {"sanity", "smoke"},dataProviderClass = TestDataProvider.class, dataProvider = "dataSuiteA")
 	public void testA(String username, String Password) throws InterruptedException
 	{
 		log("Starting A");
@@ -18,7 +18,9 @@ public class TestA extends TestBase{
 		Thread.sleep(3000);
 		log("Ending A");
 		//Assert.fail("xyz error");
-		softAssert.assertAll();
+		//softAssert.assertAll();
+		
+		
 		
 	}
 

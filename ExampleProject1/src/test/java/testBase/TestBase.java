@@ -17,7 +17,7 @@ public class TestBase {
 	public ExtentTest test;
 	public SoftAssert softAssert;
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void init(ITestResult result)
 	{
 		System.out.println(result.getMethod().getMethodName().toUpperCase());
@@ -31,7 +31,7 @@ public class TestBase {
 		softAssert = new SoftAssert();
 	}
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void quit() 
 	{
 		rep.flush();
@@ -53,7 +53,15 @@ public class TestBase {
 
 	public void failAndStopTest(String msg)
 	{
-		
+		logFailure(msg);
+		softAssert.fail(msg);
+		softAssert.assertAll();
+	}
+	
+	public void softAssert(String msg)
+	{
+		logFailure(msg);
+		softAssert.fail(msg);
 	}
 	
 }

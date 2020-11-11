@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 10 23:41:38 CST 2020</td>
+<td>Started on:</td><td>Tue Nov 10 23:57:34 CST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>6 seconds (6868 ms)</td>
+<tr><td>Total time:</td><td>7 seconds (7238 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,13 +76,18 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='suitea.TestA.testA()'><b>testA</b><br>Test class: suitea.TestA<br>Parameters: U1, P1</td>
-<td><div><pre>java.lang.AssertionError: xyz error
-	at suitea.TestA.testA(TestA.java:18)
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Title] but found [Title1],
+	expected [Text] but found [Text1]
+	at suitea.TestA.testA(TestA.java:21)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2024453272", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2024453272'><pre>java.lang.AssertionError: xyz error
-	at org.testng.Assert.fail(Assert.java:97)
-	at suitea.TestA.testA(TestA.java:18)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace634540230", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace634540230'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Title] but found [Title1],
+	expected [Text] but found [Text1]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at suitea.TestA.testA(TestA.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -105,7 +110,6 @@ function toggleAllBoxes() {
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1175)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
 	at org.testng.TestNG.runSuites(TestNG.java:1032)
 	at org.testng.TestNG.run(TestNG.java:1000)
@@ -114,16 +118,21 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>3</td>
-<td>suitea.TestA@1877ab81</td></tr>
+<td>suitea.TestA@59e5ddf</td></tr>
 <tr>
 <td title='suitea.TestA.testA()'><b>testA</b><br>Test class: suitea.TestA<br>Parameters: U2, P2</td>
-<td><div><pre>java.lang.AssertionError: xyz error
-	at suitea.TestA.testA(TestA.java:18)
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Title] but found [Title1],
+	expected [Text] but found [Text1]
+	at suitea.TestA.testA(TestA.java:21)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1325144078", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1325144078'><pre>java.lang.AssertionError: xyz error
-	at org.testng.Assert.fail(Assert.java:97)
-	at suitea.TestA.testA(TestA.java:18)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1409545055", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1409545055'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Title] but found [Title1],
+	expected [Text] but found [Text1]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at suitea.TestA.testA(TestA.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -146,7 +155,6 @@ function toggleAllBoxes() {
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1175)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
 	at org.testng.TestNG.runSuites(TestNG.java:1032)
 	at org.testng.TestNG.run(TestNG.java:1000)
@@ -155,7 +163,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>3</td>
-<td>suitea.TestA@1877ab81</td></tr>
+<td>suitea.TestA@59e5ddf</td></tr>
 </table><p>
 </body>
 </html>
