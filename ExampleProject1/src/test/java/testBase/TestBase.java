@@ -23,6 +23,8 @@ public class TestBase {
 		rep = ExtentManager.getReports();//We can give the path reporting folder
 		
 		test = rep.createTest(result.getMethod().getMethodName().toUpperCase());
+		
+		result.setAttribute("reporter", test);
 	}
 	
 	@AfterMethod
@@ -37,6 +39,12 @@ public class TestBase {
 		System.out.println(msg);
 		test.log(Status.INFO, msg);
 		test.log(Status.PASS, msg);
+	}
+	
+	public void logFailure(String msg)
+	{
+		System.out.println(msg);
+		test.log(Status.FAIL, msg);
 	}
 
 }

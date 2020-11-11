@@ -16,12 +16,13 @@
 <parameter name="browsergroup1" value="chrome"></parameter>  
 <parameter name="browsergroup2" value="ie"></parameter>  
 
+-->
 
  <listeners>
     <listener class-name="listener.CustomListener" />
  </listeners>
 
--->
+
 
 <suite-files>
 
