@@ -12,10 +12,14 @@ public class TestA extends TestBase{
 	public void testA(String username, String Password) throws InterruptedException
 	{
 		log("Starting A");
+		softAssert.assertEquals("Title1", "Title");
+		softAssert.assertEquals("Text1", "Text");
 		log(username+"   "+Password);
 		Thread.sleep(3000);
 		log("Ending A");
-		Assert.fail("xyz error");
+		//Assert.fail("xyz error");
+		softAssert.assertAll();
+		
 	}
 
 }
